@@ -1,0 +1,190 @@
+#feedback-button {
+    position: absolute;
+    border: 1px solid #000000;
+    padding: 10px 10px 0 10px;
+    background: #FFF;
+    left: -40px;
+    top: -200;
+    cursor: pointer;
+}
+
+.fdb-vertical-text {
+	color:#333;
+	border:0px solid red;
+	writing-mode:tb-rl;
+	-webkit-transform:rotate(-90deg);
+	-moz-transform:rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	white-space:nowrap;
+	display:block;
+	bottom:0;
+	font-size:12pt;
+	font-weight:bold;
+	text-shadow: 0px 0px 1px #333;
+}
+
+#feedback-form-dialog {
+    display: none;
+    z-index: 20000 !important;
+}
+
+#feedback-form input {
+    width: 95%;
+
+}
+
+#request-container ul {
+    list-style: none;
+}
+
+#request-container ul li {
+    border-bottom: 1px dashed #C0C0C0;
+    margin: 5px 0 5px 0;
+}
+
+#request-container ul li:last-child {
+    border: none;
+}
+
+#request-nav a { margin: 2px; position: relative; padding: 4px 8px 1px 0; cursor: pointer; float: left; list-style: none; }
+#request-nav a span.ui-icon { float: left; margin: 4px 4px; }
+#request-nav { clear: both;}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+#feedback-form-loading, #feedback-form-complete { font-weight: bold; margin: 10px; display: none; text-align: center; }
+#feedback-form-loading img, #feedback-form-complete img {
+    float: left;
+    vertical-align: middle;
+}
+
+#post-results { clear: both;  margin: 10px 0 0 5px; }
+
+.time-elapsed { 
+    text-align: right;
+    float: right;
+    font-weight: bold;
+}
+
+.request-votes {
+    vertical-align: middle;
+    
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+
+.request-votes-count {
+    font-size: 25pt;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+    
+    width: 50px;
+    height: 50px;
+}
+
+.request-votes-label {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.has-comments {
+    background: #4F4F4F;
+    color: #FFF;
+}
+
+.has-votes {
+    background: #E0E0E0;
+    color: #000;
+}
+
+.request-comments-count {
+    font-size: 25pt;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.request-avatar {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#request-vote {
+    text-align: center;
+    font-size: 25pt;
+    width: 50px;
+    height: 100px;
+    float: left;
+    margin: -10px 10px 0 0;
+}
+
+#vote-up, #vote-down {
+    height: 15px;
+    cursor: pointer;
+}
+
+#vote-count {
+    height: 20px;
+    padding: 10px 0 8px 0px;
+    margin: 5px 0 0 0;
+}
+
+#vote-processing {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+/* jquery ui active state for sorting links -- a little sleaker looking */
+.ui-state-active {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
+
+/* pagination */
+.fdb-pagination { clear: both; border-bottom: 1px solid #C0C0C0; text-align: right; padding-top: 15px }
+.fdb-pagination span {
+    list-style:none;
+    margin-bottom: 2px;
+}
+
+.fdb-pagination span, .fdb-pagination a {
+    border-left:solid 1px #DEDEDE;
+    padding: 0px 4px 0px 4px;
+}
+
+.page-numbers:first-child {
+    border: none !important;
+}
+
+.fdb-pagination .previous-off,
+.fdb-pagination .next-off {
+    font-weight:bold;
+   
+}
+.fdb-pagination .next,
+.fdb-pagination .prev {
+    font-weight:bold;
+    border:none;
+} 
+.fdb-pagination .current {
+    color:#00000;
+    font-weight:bold;
+}
+.fdb-pagination a:link,
+.fdb-pagination a:visited {
+    text-decoration:none;
+}
+.fdb-pagination a:hover {
+    text-decoration:none;
+}
